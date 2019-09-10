@@ -6,7 +6,7 @@ img {
   padding: 1%;
 }
 #Items {
-  padding-top: 3%;
+  padding-top: 15%;
 }
 p {
   font-family: "Lexend Deca", sans-serif !important;
@@ -21,17 +21,6 @@ h1 {
 body {
   background-color: #e7a30e;
 }
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .container {
-    width: 50%;
-    height: 50%;
-    /* overflow-y: scroll;
-      scroll-behavior: smooth;
-      scroll-snap-type: y mandatory; */
-  }
-}
-
 .container {
   width: 100%;
   height: 100%;
@@ -78,9 +67,8 @@ section {
 
 section h2 {
   font-size: 2rem;
-  
-  padding-top: 10%;
-  
+  padding-top: 7%;
+  vertical-align: text-top;
 }
 section p {
   font-size: 1rem;
@@ -97,16 +85,15 @@ i:hover {
   width: 50%;
 }
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 500px) {
   section h1 {
     text-align: center;
     font-size: 8em;
-    
   }
   section h2 {
     text-align: left;
-    font-size: 3em;
-    padding-top: 10%;
+    font-size: 5em;
+    padding-top: 20%;
   }
   section p {
     text-align: left;
@@ -117,7 +104,7 @@ i:hover {
     font-size: 5em;
     padding: 1%;
   }
-  span{
+  span {
     font-size: 1.25rem;
     text-align: center;
   }
@@ -143,5 +130,12 @@ i:hover {
   .navbar ul li a {
     color: black !important;
     font-size: 2rem !important;
+  }
+  .skill {
+    
+    vertical-align: top !important;
+  }
+  .row{
+    margin-bottom: -10%;
   }
 }
