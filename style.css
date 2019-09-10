@@ -2,19 +2,35 @@
   margin: 0;
   padding: 0;
 }
-
-
+img {
+  padding: 1%;
+}
+#Items {
+  padding-top: 3%;
+}
 p {
   font-family: "Lexend Deca", sans-serif !important;
 }
 h2 {
   font-family: "Lexend Deca", sans-serif !important;
 }
-
-body{
-    background-color: #e7a30e
+h1 {
+  font-family: "Lexend Deca", sans-serif !important;
+  padding-top: 8%;
 }
-
+body {
+  background-color: #e7a30e;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    width: 50%;
+    height: 50%;
+    /* overflow-y: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory; */
+  }
+}
 
 .container {
   width: 100%;
@@ -40,6 +56,12 @@ body{
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  color: black !important;
+}
+.navbar ul li a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray !important;
 }
 
 section {
@@ -56,7 +78,9 @@ section {
 
 section h2 {
   font-size: 2rem;
-  text-align: left;
+  
+  padding-top: 10%;
+  
 }
 section p {
   font-size: 1rem;
@@ -68,4 +92,56 @@ i {
 }
 i:hover {
   color: lightblue;
+}
+.col-6 {
+  width: 50%;
+}
+
+@media only screen and (max-device-width: 700px) {
+  section h1 {
+    text-align: center;
+    font-size: 8em;
+    
+  }
+  section h2 {
+    text-align: left;
+    font-size: 3em;
+    padding-top: 10%;
+  }
+  section p {
+    text-align: left;
+    font-size: 2.5em;
+  }
+  section i {
+    text-align: center;
+    font-size: 5em;
+    padding: 1%;
+  }
+  span{
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  section {
+    padding-top: 4%;
+  }
+  img {
+    width: 65%;
+    height: 110%;
+    padding: 4%;
+    padding-top: 4%;
+    margin-left: 17%;
+  }
+  .row {
+    text-align: center;
+    margin: auto;
+  }
+  .col-sm {
+    flex-basis: auto !important ;
+    text-align: left;
+  }
+
+  .navbar ul li a {
+    color: black !important;
+    font-size: 2rem !important;
+  }
 }
